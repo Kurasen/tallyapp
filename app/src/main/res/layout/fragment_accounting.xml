@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/round_edittext_bg"
+    tools:context=".fragment.Accounting">
+
+    <!-- TODO: Update blank fragment layout -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="20dp"
+        android:id="@+id/accounting_BottonNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/round_button_bg"
+        app:menu = "@menu/accounting_type_menu"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:id="@+id/accounting_content"/>
+
+</FrameLayout>
